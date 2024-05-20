@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Google-contacts by Caleb</title>
+    <script src="https://kit.fontawesome.com/c66d8865d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500;700" rel="stylesheet">
+    <link href="img/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <!--la barre d'en-tete-->
+
+    <div id="header">
+        <div id="logoSection">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <div id="logo">
+                <img src="img/usericon.png"/>Contacts
+            </div>
+        </div>
+                <!--barre de recherche-->
+        <div id="searchSection">
+            <div id="searchContainer">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input type="text" placeholder="Rehercher"/>
+            </div>
+        </div>
+        <!--cette section comportera des actions, ex compte utilisateur,... à plus tard... -->
+        <div id="actionSection"></div>
+    </div>
+
+    <!--le content container-->
+
+    <div id="contentContainer">
+        <div id="sideBar">  <!--la barre déroulante-->
+            <div id="createContactBtn"> <!--bouton de création de contact-->
+                <i class="fa-sharp fa-solid fa-plus"></i>Créer un contact
+            </div>
+            <div id="links">
+                <div class="linkContacts active"> <!--menu des contacts-->
+                    <div class="content">
+                        <i class="fa-solid fa-user"></i>
+                        Contacts
+                    </div>
+                    <div class="counter">0</div>
+                </div>
+
+                <div class="linkFrequent active"> <!--menu de contacts fréquemment cherchés ou consultés-->
+                    <i class="fa-solid fa-clock-rotate-left"></i>Fréquents
+                </div>
+
+                <div class="linkLabel active">Libellés
+                  <button><i class="fa-sharp fa-solid fa-plus"></i></button>
+                </div>
+                <div class="label-container">
+                    <!-- ici les etiquettes -->
+                </div>
+                  
+                <div class="label-editor-container hidden">
+                    <input type="text" class="label-editor-input" placeholder="Entrez un nouveau libellé">
+                    <div class="label-editor-buttons">
+                      <button class="label-editor-save-btn">Enregistrer</button>
+                      <button class="label-editor-cancel-btn">Annuler</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="content"> <!--les contenus de la page-->
+            <div class="tableContacts">
+                <div class="contacts">Contacts</div>
+                <span dir="ltr" class="number">(0)</span>
+            </div>
+            <div class="tables">
+                <div class="tableHead">
+                    <div class="column">Titre</div>
+                    <div class="column">E-mail</div>
+                    <div class="column">Numéro de téléphone</div>
+                    <div class="column">Fonction et Entreprise</div>
+                    <div class="column">Libellés</div>
+                </div>
+        
+                <div class="tableBody">
+                    <div class="tableRow">
+                        <div class="column">
+                            <div class="avatar">A</div>
+                            <div class="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            Titre
+                        </div>
+                        <div class="column">E-mail</div>
+                        <div class="column">Numéro de téléphone</div>
+                        <div class="column">Fonction et Entreprise</div>
+                        <div class="column">Libellés</div>
+                    </div>
+
+                    <div class="tableRow">
+                        <div class="column">
+                            <div class="avatar">B</div>
+                            <div class="checkbox">
+                                <input type="checkbox">
+                            </div>
+                            Titre
+                        </div>
+                        <div class="column">E-mail</div>
+                        <div class="column">Numéro de téléphone</div>
+                        <div class="column">Fonction et Entreprise</div>
+                        <div class="column">Libellés</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
